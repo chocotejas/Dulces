@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="t d">
+<title id="t">Dulces Artesanales</title><desc id="d">Bombón de chocolate con detalles rosa y verde, sobre fondo crema.</desc>
+<rect width="320" height="320" rx="36" fill="#FDF4E8"/>
+<g stroke="#6B3F2E" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M53 122 A108 108 0 0 1 264 117" fill="none" stroke-width="4"/>
+  <path d="M68 151 C42 128 52 101 75 97 C94 94 108 110 107 128 C106 146 88 159 68 151Z" fill="#A7C957" stroke="none"/>
+  <path d="M74 143 Q81 122 96 108" fill="none" stroke="#FDF4E8" stroke-width="3"/>
+  <path d="M245 148 C270 126 260 99 237 96 C218 93 204 109 205 127 C206 144 225 158 245 148Z" fill="#D9E7B7" stroke="none"/>
+  <path d="M239 141 Q232 120 216 107" fill="none" stroke="#FDF4E8" stroke-width="3"/>
+  <path d="M116 101 C115 79 140 67 157 83 C176 63 204 80 202 103 C201 121 179 142 160 151 C140 140 118 120 116 101Z" fill="#F6B6C1" stroke="none"/>
+  <path d="M100 168 Q160 138 220 168 L205 213 Q160 235 115 213Z" fill="#6B3F2E" stroke-width="4"/>
+  <path d="M111 171 L122 211 M128 164 L137 218 M147 160 L151 224 M168 160 L168 224 M189 164 L183 218 M207 171 L198 211" fill="none" stroke="#98664D" stroke-width="3"/>
+  <path d="M111 166 C99 132 121 107 151 112 C174 99 201 117 208 146 C213 159 205 170 197 175 L118 175Z" fill="#6B3F2E" stroke-width="4"/>
+  <path d="M125 139 Q158 115 192 141" fill="none" stroke="#FDF4E8" stroke-width="7"/>
+  <path d="M124 151 Q158 127 197 153" fill="none" stroke="#E79AA8" stroke-width="5"/>
+  <g fill="#F6D9A8" stroke="none"><ellipse cx="147" cy="121" rx="6" ry="4" transform="rotate(-20 147 121)"/><ellipse cx="161" cy="117" rx="6" ry="4" transform="rotate(16 161 117)"/><ellipse cx="175" cy="122" rx="6" ry="4" transform="rotate(-24 175 122)"/><ellipse cx="187" cy="132" rx="5" ry="4" transform="rotate(24 187 132)"/></g>
+</g>
+<text x="160" y="257" text-anchor="middle" font-family="Georgia,serif" font-size="39" font-weight="bold" fill="#6B3F2E" letter-spacing="-1.5">Dulces</text>
+<path d="M67 276 H110 M210 276 H253" stroke="#A7C957" stroke-width="3" stroke-linecap="round"/>
+<path d="M160 268 C152 259 143 268 160 282 C177 268 168 259 160 268Z" fill="#F6B6C1"/>
+<text x="160" y="298" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" letter-spacing="2.8" fill="#6B3F2E">ARTESANALES</text>
+</svg>
