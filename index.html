@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#fdf4e8">
-<link rel="icon" type="image/jpeg" href="assets/logo-dulces-artesanales.jpg">
+<link rel="icon" type="image/webp" href="assets/logo-dulces-artesanales.webp">
 <meta name="description" content="Catálogo de Dulces Artesanales: chocotejas, trufas y alfajores. Consulta directamente por WhatsApp.">
 <title>Dulces Artesanales | Catálogo</title>
 <style>
@@ -29,12 +29,12 @@ body{margin:0;min-height:100svh;background:var(--cream);color:var(--ink);font-fa
 a{color:inherit}
 button,a{-webkit-tap-highlight-color:transparent}
 button{font:inherit}
-.site-header{height:70px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);background:var(--cream)}
-.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
-.brand-mark{width:52px;height:52px;display:block;flex:none;object-fit:contain;border-radius:12px;background:transparent}
-.brand-name{display:block;font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:1.22rem;line-height:1.05;letter-spacing:-.045em;color:var(--chocolate);white-space:nowrap}
-.brand-caption{display:block;margin-top:4px;color:var(--muted);font-size:.62rem;letter-spacing:.075em;white-space:nowrap}
-.header-dot{width:9px;height:9px;border-radius:50%;background:var(--pink);box-shadow:0 0 0 5px var(--pink-soft);margin-right:7px;flex:none}
+.site-header{height:88px;padding:4px 16px;display:flex;align-items:center;justify-content:center;gap:12px;border-bottom:1px solid var(--line);background:var(--cream)}
+.brand{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;min-width:0;max-width:100%}
+.brand-mark{width:80px;height:80px;display:block;flex:none;object-fit:contain;border-radius:10px;background:transparent}
+.brand-name{display:none}
+.brand-caption{display:none}
+.header-dot{display:none}
 main{width:100%;padding:16px 13px 10px}
 .catalog{width:min(100%,500px);margin:0 auto}
 .photo-link{position:relative;display:block;overflow:hidden;width:100%;height:clamp(260px,47svh,465px);background:var(--lime-soft);border-radius:22px;text-decoration:none;isolation:isolate}
@@ -74,10 +74,8 @@ main{width:100%;padding:16px 13px 10px}
   .site-footer{padding-bottom:20px}
 }
 @media(max-width:380px){
-  .site-header{height:64px;padding:0 14px}
-  .brand-name{font-size:1.02rem}
-  .brand-mark{width:34px;height:34px}
-  .brand-caption{font-size:.58rem}
+  .site-header{height:82px;padding:3px 12px}
+  .brand-mark{width:74px;height:74px}
   main{padding:11px 10px 8px}
   .photo-link{height:clamp(235px,43svh,350px);border-radius:18px}
   .details{padding:17px 3px 0}
@@ -92,13 +90,8 @@ main{width:100%;padding:16px 13px 10px}
 <body>
 <header class="site-header">
   <a class="brand" href="./" aria-label="Dulces Artesanales, inicio">
-    <img class="brand-mark" src="assets/logo-dulces-artesanales.jpg" alt="" aria-hidden="true">
-    <span>
-      <span class="brand-name">Dulces Artesanales</span>
-      <span class="brand-caption">chocotejas · trufas · alfajores</span>
-    </span>
+    <img class="brand-mark" src="assets/logo-dulces-artesanales.webp" alt="Dulces Artesanales" width="80" height="80" fetchpriority="high" decoding="async">
   </a>
-  <span class="header-dot" aria-hidden="true"></span>
 </header>
 
 <main>
