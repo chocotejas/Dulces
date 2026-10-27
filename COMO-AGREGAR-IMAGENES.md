@@ -1,10 +1,10 @@
-# Cómo agregar o cambiar fotos en Dulceria
+# Cómo agregar o cambiar fotos en Dulces Artesanales
 
 Puedes administrar el catálogo desde GitHub sin instalar programas ni tocar el diseño de la página.
 
 ## 1. Subir una fotografía
 
-1. Entra a [la carpeta productos](https://github.com/chocotejas/Dulces/tree/main/productos).
+1. Entra a [la carpeta productos](https://github.com/chocotejas/menu/tree/main/productos).
 2. Pulsa **Add file → Upload files**.
 3. Selecciona o arrastra tus fotografías.
 4. Pulsa **Commit changes** para guardarlas.
@@ -13,7 +13,7 @@ Usa nombres sencillos, sin espacios ni tildes, por ejemplo chocotejas-manjar.web
 
 ## 2. Mostrar esa foto en el carrusel
 
-1. Abre [productos.json](https://github.com/chocotejas/Dulces/blob/main/productos.json).
+1. Abre [productos.json](https://github.com/chocotejas/menu/blob/main/productos.json).
 2. Pulsa el lápiz (**Edit this file**).
 3. En el producto que deseas cambiar, modifica el valor de imagen por la ruta de tu archivo, por ejemplo:
 
