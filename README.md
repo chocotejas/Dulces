@@ -1,9 +1,9 @@
-# Dulceria
+# Dulces Artesanales
 
 Catálogo móvil y minimalista de chocotejas, trufas, alfajores y futuros dulces. Publicado con GitHub Pages.
 
 ## Ver la página
-https://chocotejas.github.io/Dulces/
+https://chocotejas.github.io/menu/
 
 ## Administrar el catálogo desde GitHub
 
