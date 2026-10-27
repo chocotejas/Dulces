@@ -1,0 +1,32 @@
+[
+  {
+    "id": "chocotejas",
+    "nombre": "Chocotejas",
+    "etiqueta": "Un clásico irresistible",
+    "descripcion": "Bocaditos de chocolate para compartir, regalar o disfrutar a tu manera.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Chocoteja.jpg/960px-Chocoteja.jpg",
+    "respaldo": "assets/chocotejas.svg",
+    "alt": "Chocotejas peruanas de chocolate, foto de referencia",
+    "mensaje": "Hola, quisiera información sobre las chocotejas de Dulceria."
+  },
+  {
+    "id": "trufas",
+    "nombre": "Trufas",
+    "etiqueta": "Intensas y delicadas",
+    "descripcion": "Pequeños bocados de chocolate ideales para darte un gusto o sorprender a alguien.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/48/ChocolateTruffles.jpg",
+    "respaldo": "assets/trufas.svg",
+    "alt": "Trufas de chocolate, foto de referencia",
+    "mensaje": "Hola, quisiera información sobre las trufas de Dulceria."
+  },
+  {
+    "id": "alfajores",
+    "nombre": "Alfajores",
+    "etiqueta": "Dulzura en cada bocado",
+    "descripcion": "Suaves y dulces, perfectos para acompañar el café o compartir en familia.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Alfajores-de-maicena-biscuits-recipe.jpg",
+    "respaldo": "assets/alfajores.svg",
+    "alt": "Alfajores rellenos, foto de referencia",
+    "mensaje": "Hola, quisiera información sobre los alfajores de Dulceria."
+  }
+]
