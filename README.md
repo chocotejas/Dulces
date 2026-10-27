@@ -1,19 +1,26 @@
-# Dulceria — catálogo de dulces
+# Dulceria
 
-Sitio estático para mostrar chocotejas, trufas y alfajores y llevar a los visitantes directamente a WhatsApp. No tiene carrito ni pagos en línea.
+Catálogo móvil y minimalista de chocotejas, trufas, alfajores y futuros dulces. Publicado con GitHub Pages.
 
-## Publicar con GitHub Pages
+## Ver la página
+https://chocotejas.github.io/Dulces/
 
-1. Abre **Settings → Pages** en este repositorio.
-2. En **Build and deployment**, selecciona **GitHub Actions** como fuente si aún no está configurada.
-3. Cada cambio en la rama `main` ejecutará el flujo de despliegue definido en `.github/workflows/pages.yml`.
-4. En **Actions**, comprueba el estado del flujo. Al terminar correctamente, el sitio estará en `https://alexantunez0194-beep.github.io/Dulces/`.
+## Administrar el catálogo desde GitHub
 
-## Editar el catálogo
+- **Productos e imágenes:** edita [productos.json](productos.json).
+- **Subir fotografías propias:** usa la carpeta [productos/](productos/).
+- **Guía paso a paso:** lee [COMO-AGREGAR-IMAGENES.md](COMO-AGREGAR-IMAGENES.md).
+- **Créditos de fotos de referencia:** [CREDITOS-IMAGENES.md](CREDITOS-IMAGENES.md).
 
-- **Nombre:** en `index.html`, busca `Dulceria`.
-- **WhatsApp:** busca `WHATSAPP_NUMBER`. Usa el código de país y solo números. El número configurado actualmente es el que se compartió para el negocio.
-- **Textos:** cambia los títulos y las descripciones dentro de la sección `Nuestros productos`.
-- **Imágenes:** reemplaza los SVG de la carpeta `assets` con fotos propias o modifica las rutas `src` de las etiquetas `img` en `index.html`.
+## Características
 
-Para editar desde GitHub, abre el archivo, pulsa el lápiz, guarda los cambios con **Commit changes** y espera al despliegue.
+- Diseño vertical, pensado primero para celular.
+- Carrusel manual con swipe, flechas e indicadores.
+- Solo se carga la fotografía del producto visible; las demás se cargan cuando se navega a ellas.
+- Un botón de consulta a WhatsApp por producto.
+- Sin frameworks, fuentes externas, analítica, carrito ni pagos.
+- Paleta basada en el empaque: verde lima, rosa pastel y crema.
+
+## Contacto
+
+El enlace de WhatsApp está configurado para el número del negocio en Perú. Para cambiarlo, edita la constante WHATSAPP_NUMBER en index.html.
