@@ -7,7 +7,7 @@
     "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Chocoteja.jpg/960px-Chocoteja.jpg",
     "respaldo": "assets/chocotejas.svg",
     "alt": "Chocotejas peruanas de chocolate, foto de referencia",
-    "mensaje": "Hola, quisiera información sobre las chocotejas de Dulceria."
+    "mensaje": "Hola, quisiera información sobre las chocotejas de Dulces Artesanales."
   },
   {
     "id": "trufas",
@@ -17,7 +17,7 @@
     "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ChocolateTruffles.jpg/800px-ChocolateTruffles.jpg",
     "respaldo": "assets/trufas.svg",
     "alt": "Trufas de chocolate, foto de referencia",
-    "mensaje": "Hola, quisiera información sobre las trufas de Dulceria."
+    "mensaje": "Hola, quisiera información sobre las trufas de Dulces Artesanales."
   },
   {
     "id": "alfajores",
@@ -27,6 +27,6 @@
     "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Alfajores-de-maicena-biscuits-recipe.jpg/800px-Alfajores-de-maicena-biscuits-recipe.jpg",
     "respaldo": "assets/alfajores.svg",
     "alt": "Alfajores rellenos, foto de referencia",
-    "mensaje": "Hola, quisiera información sobre los alfajores de Dulceria."
+    "mensaje": "Hola, quisiera información sobre los alfajores de Dulces Artesanales."
   }
 ]
