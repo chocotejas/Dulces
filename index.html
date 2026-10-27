@@ -2,236 +2,255 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#59642b">
-<meta name="description" content="Descubre los dulces artesanales de Dulceria: chocotejas, trufas y alfajores. Escríbenos por WhatsApp.">
-<title>Dulceria | Un detalle dulce</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fff9f6">
+<meta name="description" content="Catálogo de dulces artesanales Dulceria. Mira los productos y consúltanos directamente por WhatsApp.">
+<title>Dulceria | Catálogo</title>
 <style>
-:root{--cocoa:#59642b;--cocoa-light:#7b8b40;--cream:#fff9f6;--sand:#eef1d6;--caramel:#de8fa9;--text:#454632;--muted:#777660;--green:#25843d;--line:#59642b1c}
+:root{
+  --lime:#8eb72e;
+  --lime-dark:#627a2b;
+  --lime-soft:#e8edcf;
+  --pink:#e7a4ba;
+  --pink-soft:#f8e8ee;
+  --cream:#fff9f6;
+  --paper:#fffdfb;
+  --sage:#d9dfc8;
+  --ink:#414632;
+  --muted:#777966;
+  --whatsapp:#168447;
+  --line:#e7e5d9;
+}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--cream);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+html{min-height:100%;background:var(--cream);-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;min-height:100svh;background:var(--cream);color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit}
-.top-note{min-height:30px;display:flex;align-items:center;justify-content:center;text-align:center;padding:6px 12px;background:var(--cocoa);color:#fff8f3;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
-header{position:relative;z-index:5;background:var(--cream);border-bottom:1px solid var(--line)}
-.nav{width:min(1250px,calc(100% - 48px));min-height:76px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.brand-symbol{width:43px;height:43px;display:grid;place-items:center;border-radius:50%;background:var(--cocoa);color:#ffeef2;font-family:Georgia,serif;font-size:1.35rem}
-.brand-name{display:block;font-family:Georgia,"Times New Roman",serif;font-size:1.45rem;line-height:1;color:var(--cocoa);font-weight:700}
-.brand-tag{display:block;margin-top:5px;color:var(--muted);font-size:.62rem;letter-spacing:.19em;text-transform:uppercase}
-.nav-right{display:flex;align-items:center;gap:24px}
-.nav-label{font-size:.84rem;color:var(--muted)}
-.wa-button{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border:0;border-radius:100px;background:var(--green);color:#fff;text-decoration:none;font-size:.88rem;font-weight:750;box-shadow:0 8px 20px #25843d20;transition:transform .2s,box-shadow .2s;white-space:nowrap}
-.wa-button:hover{transform:translateY(-2px);box-shadow:0 11px 23px #25843d35}
-.wa-icon{width:19px;height:19px;flex:none}
-main{padding:22px 24px 26px}
-.carousel-shell{width:min(1390px,100%);margin:auto}
-.carousel{position:relative;isolation:isolate;overflow:hidden;min-height:clamp(510px,calc(100svh - 190px),760px);border-radius:28px;background:#e8edc9;box-shadow:0 25px 75px #59642b14}
-.slide{position:absolute;inset:0;display:grid;grid-template-columns:.86fr 1.14fr;align-items:stretch;opacity:0;visibility:hidden;transform:scale(1.015);transition:opacity .7s ease,transform 1.2s ease,visibility .7s}
-.slide.is-active{position:relative;opacity:1;visibility:visible;transform:scale(1)}
-.slide-copy{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:clamp(34px,5.2vw,78px);background:linear-gradient(120deg,#fff5f4 0%,#fff5f4 80%,#fff5f4ee 100%)}
-.kicker{display:flex;align-items:center;gap:10px;color:var(--cocoa-light);font-size:.73rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase}
-.kicker:before{content:"";width:28px;height:2px;background:var(--caramel)}
-.slide h1,.slide h2{max-width:470px;margin:20px 0 17px;color:var(--cocoa);font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:clamp(2.7rem,5vw,5.15rem);letter-spacing:-.055em;line-height:.99}
-.slide h1 em,.slide h2 em{color:var(--caramel);font-weight:500}
-.slide p{max-width:390px;margin:0 0 28px;color:var(--muted);font-size:clamp(.94rem,1.25vw,1.08rem);line-height:1.8}
-.slide-art{position:relative;min-width:0;min-height:100%;overflow:hidden;background:#f2dce4}
-.slide-art:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#fff5f436 0%,transparent 25%),linear-gradient(0deg,#3d21170d,transparent 28%);pointer-events:none}
-.slide-art img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;display:block}
-.slide-index{position:absolute;top:27px;right:29px;z-index:3;padding:9px 13px;border:1px solid #ffffff80;border-radius:100px;background:#fffaf3c9;color:var(--cocoa);font-size:.75rem;font-weight:800;letter-spacing:.1em;backdrop-filter:blur(8px)}
-.carousel-tools{position:absolute;z-index:4;bottom:27px;left:clamp(34px,5.2vw,78px);display:flex;align-items:center;gap:18px}
-.dots{display:flex;align-items:center;gap:8px}
-.dot{width:8px;height:8px;border:0;border-radius:99px;padding:0;background:#d9b9c0;cursor:pointer;transition:width .25s,background .25s}
-.dot[aria-current="true"]{width:30px;background:var(--cocoa)}
-.counter{color:#79765f;font-size:.78rem;font-variant-numeric:tabular-nums;letter-spacing:.08em}
-.arrows{position:absolute;z-index:4;right:28px;bottom:25px;display:flex;gap:9px}
-.arrow{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1px solid #ffffffa8;background:#fffaf3e8;color:var(--cocoa);cursor:pointer;backdrop-filter:blur(10px);transition:background .2s,transform .2s}
-.arrow:hover{background:white;transform:translateY(-2px)}
-.arrow svg{width:19px;height:19px}
-.below{width:min(1390px,100%);margin:23px auto 0;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 4px}
-.below-caption{display:flex;align-items:center;gap:13px;color:var(--muted);font-size:.82rem}
-.tiny-stars{color:var(--caramel);font-size:1.05rem;letter-spacing:.08em}
-.below-note{font-size:.78rem;color:#8a8b72}
-.floating-wa{position:fixed;z-index:20;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;box-shadow:0 8px 24px #0003;transition:transform .2s}
-.floating-wa:hover{transform:scale(1.07)}
-.floating-wa svg{width:29px;height:29px}
-footer{padding:18px 24px 28px;text-align:center;color:#85856e;font-size:.72rem;letter-spacing:.04em}
-@media(max-width:850px){.nav{width:calc(100% - 32px);min-height:69px}.nav-label{display:none}.nav-right{gap:10px}.wa-button{padding:11px 14px;font-size:.8rem}.carousel{min-height:0;border-radius:23px}.slide{grid-template-columns:1fr;grid-template-rows:minmax(260px,48vw) auto}.slide-art{grid-row:1;min-height:260px}.slide-art img{object-fit:cover}.slide-copy{grid-row:2;padding:30px 30px 86px;min-height:275px}.slide h1,.slide h2{font-size:clamp(2.5rem,8vw,4rem);margin:14px 0}.slide p{font-size:.91rem;margin-bottom:21px;line-height:1.65}.slide-index{top:18px;right:18px}.carousel-tools{left:30px;bottom:25px}.arrows{right:20px;bottom:18px}.arrow{width:40px;height:40px}.below{align-items:flex-start;flex-direction:column;gap:8px;margin-top:17px}.below-note{padding-left:2px}}
-@media(max-width:420px){main{padding:12px 11px 22px}.top-note{font-size:.62rem}.brand-name{font-size:1.25rem}.brand-tag{font-size:.55rem}.brand-symbol{width:37px;height:37px}.nav-right .wa-button{font-size:0;width:42px;height:42px;padding:0}.nav-right .wa-icon{width:20px;height:20px}.slide-art{min-height:235px}.slide-copy{padding:24px 22px 86px}.slide h1,.slide h2{font-size:2.65rem}.carousel-tools{left:22px;gap:12px}.counter{font-size:.7rem}.arrows{right:14px;gap:6px}.arrow{width:36px;height:36px}.below{padding:0 6px}.floating-wa{width:52px;height:52px;right:15px;bottom:15px}}
-/* Diseño vertical: prioridad móvil en cualquier tamaño de pantalla */
-main{padding:clamp(12px,3vw,28px) 12px 24px}
-.carousel-shell{width:min(780px,100%);margin:0 auto}
-.carousel{min-height:0;border-radius:clamp(18px,3.5vw,28px)}
-.slide{grid-template-columns:minmax(0,1fr);grid-template-rows:clamp(230px,42vw,430px) auto}
-.slide-art{grid-row:1;min-height:0}
-.slide-art img{object-fit:cover}
-.slide-copy{grid-row:2;justify-content:center;min-height:315px;padding:34px clamp(22px,5.5vw,58px) 94px;background:linear-gradient(145deg,#fff5f4 0%,#fff9f6 100%)}
-.slide h1,.slide h2{max-width:560px;font-size:clamp(2.45rem,6.2vw,4.15rem);line-height:1.02;margin:15px 0}
-.slide p{max-width:540px;font-size:clamp(.95rem,2.1vw,1.08rem);line-height:1.7;margin-bottom:24px}
-.slide-index{top:16px;right:16px}
-.carousel-tools{left:clamp(22px,5.5vw,58px);bottom:24px;gap:14px}
-.arrows{right:clamp(15px,3vw,25px);bottom:16px;gap:8px}
-.arrow{width:42px;height:42px}
-.below{width:min(780px,100%);margin:17px auto 0;align-items:flex-start;flex-direction:column;gap:7px;padding:0 4px}
-.below-note{padding-left:2px;line-height:1.5}
-.floating-wa{right:16px;bottom:16px;width:54px;height:54px}
-@media(min-width:851px){
-  main{padding-top:28px}
-  .nav{width:min(780px,calc(100% - 48px))}
-  .slide-copy{min-height:350px}
+button,a{-webkit-tap-highlight-color:transparent}
+button{font:inherit}
+.site-header{height:70px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);background:var(--cream)}
+.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand-mark{width:37px;height:37px;display:grid;place-items:center;flex:none;border-radius:50%;background:var(--lime);color:white;font-family:Georgia,serif;font-size:1.25rem}
+.brand-name{display:block;font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:1.38rem;line-height:1.05;letter-spacing:-.035em;color:var(--lime-dark)}
+.brand-caption{display:block;margin-top:4px;color:var(--muted);font-size:.62rem;letter-spacing:.075em;white-space:nowrap}
+.header-dot{width:9px;height:9px;border-radius:50%;background:var(--pink);box-shadow:0 0 0 5px var(--pink-soft);margin-right:7px;flex:none}
+main{width:100%;padding:16px 13px 10px}
+.catalog{width:min(100%,500px);margin:0 auto}
+.photo-link{position:relative;display:block;overflow:hidden;width:100%;height:clamp(260px,47svh,465px);background:var(--lime-soft);border-radius:22px;text-decoration:none;isolation:isolate}
+.photo-link:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.product-photo{display:block;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition:opacity .18s ease}
+.product-photo.is-changing{opacity:.35}
+.photo-chip{position:absolute;top:13px;left:13px;padding:8px 11px;border:1px solid #ffffffa6;border-radius:999px;background:#fffdf1e8;color:var(--lime-dark);font-size:.66rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;backdrop-filter:blur(8px)}
+.photo-index{position:absolute;right:13px;top:13px;min-width:54px;text-align:center;padding:8px 10px;border:1px solid #ffffffa6;border-radius:999px;background:#fffdf1e8;color:var(--ink);font-size:.72rem;font-variant-numeric:tabular-nums;backdrop-filter:blur(8px)}
+.details{padding:20px 5px 0}
+.eyebrow{display:flex;align-items:center;gap:8px;margin:0 0 9px;color:var(--lime-dark);font-size:.68rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.eyebrow:before{content:"";width:20px;height:2px;border-radius:2px;background:var(--pink)}
+.product-title{margin:0;color:var(--ink);font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.2rem,9vw,3.05rem);line-height:1.04;font-weight:500;letter-spacing:-.05em}
+.product-description{max-width:430px;margin:11px 0 19px;color:var(--muted);font-size:.94rem;line-height:1.65}
+.whatsapp-button{width:100%;min-height:51px;display:flex;align-items:center;justify-content:center;gap:10px;padding:13px 18px;border:0;border-radius:14px;background:var(--whatsapp);color:#fff;text-align:center;text-decoration:none;font-size:.93rem;font-weight:750;box-shadow:0 5px 14px #16844718;transition:background .15s,transform .15s}
+.whatsapp-button:hover{background:#116f3b}
+.whatsapp-button:active{transform:scale(.99)}
+.whatsapp-button:focus-visible,.control:focus-visible,.dot:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.whatsapp-icon{width:21px;height:21px;flex:none}
+.carousel-controls{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:17px 2px 0}
+.control{width:40px;height:40px;flex:none;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;background:var(--paper);color:var(--lime-dark);cursor:pointer;transition:background .15s}
+.control:hover{background:var(--lime-soft)}
+.control svg{width:19px;height:19px}
+.middle-controls{flex:1;display:flex;align-items:center;justify-content:center;gap:12px;min-width:0}
+.dots{display:flex;align-items:center;justify-content:center;gap:7px;max-width:60%;overflow:hidden}
+.dot{width:7px;height:7px;flex:none;padding:0;border:0;border-radius:999px;background:#d6d9c6;cursor:pointer;transition:width .15s,background .15s}
+.dot[aria-current="true"]{width:23px;background:var(--pink)}
+.counter{color:var(--muted);font-size:.71rem;font-variant-numeric:tabular-nums;letter-spacing:.06em;white-space:nowrap}
+.swipe-hint{text-align:center;padding:11px 0 4px;color:#8b8d7e;font-size:.71rem;letter-spacing:.015em}
+.site-footer{text-align:center;padding:13px 16px calc(17px + env(safe-area-inset-bottom));color:#8b8d7e;font-size:.68rem}
+.credit-link{color:var(--lime-dark);text-decoration:underline;text-underline-offset:3px}
+.status{padding:25px 12px;text-align:center;color:var(--muted);font-size:.88rem}
+@media(min-width:700px){
+  body{background:#f6f4e9}
+  .site-header{width:min(100%,540px);margin:0 auto;background:var(--cream)}
+  main{padding-top:22px;padding-bottom:16px}
+  .photo-link{height:min(53svh,470px)}
+  .site-footer{padding-bottom:20px}
 }
-@media(max-width:520px){
-  .top-note{font-size:.61rem;letter-spacing:.1em}
-  .nav{width:calc(100% - 28px);min-height:66px;gap:10px}
-  .brand{gap:8px}
-  .brand-symbol{width:36px;height:36px;font-size:1.15rem}
-  .brand-name{font-size:1.23rem}
-  .brand-tag{font-size:.52rem;letter-spacing:.13em}
-  .nav-right{gap:0}
-  .nav-right .wa-button{width:42px;height:42px;padding:0;font-size:0;gap:0}
-  .nav-right .wa-icon{width:21px;height:21px}
-  .slide{grid-template-rows:clamp(225px,70vw,310px) auto}
-  .slide-copy{min-height:330px;padding:27px 22px 92px}
-  .kicker{font-size:.64rem;letter-spacing:.13em}
-  .slide h1,.slide h2{font-size:clamp(2.35rem,10.7vw,3rem);margin:13px 0}
-  .slide p{font-size:.92rem;line-height:1.65;margin-bottom:22px}
-  .slide-copy .wa-button{min-height:46px;padding:12px 16px;font-size:.84rem}
-  .carousel-tools{left:22px;bottom:24px;gap:11px}
-  .dot{width:7px;height:7px}
-  .dot[aria-current="true"]{width:25px}
-  .counter{font-size:.68rem}
-  .arrows{right:13px;bottom:16px;gap:6px}
-  .arrow{width:36px;height:36px}
-  .below-caption{font-size:.75rem;gap:8px}
-  .below-note{font-size:.72rem;max-width:90%}
-  footer{padding:16px 16px 24px;font-size:.68rem}
-  .floating-wa{right:13px;bottom:13px;width:50px;height:50px}
+@media(max-width:380px){
+  .site-header{height:64px;padding:0 14px}
+  .brand-name{font-size:1.28rem}
+  .brand-mark{width:34px;height:34px}
+  .brand-caption{font-size:.58rem}
+  main{padding:11px 10px 8px}
+  .photo-link{height:clamp(235px,43svh,350px);border-radius:18px}
+  .details{padding:17px 3px 0}
+  .product-title{font-size:2.25rem}
+  .product-description{margin:9px 0 16px;font-size:.9rem}
+  .whatsapp-button{min-height:49px}
+  .carousel-controls{padding-top:13px}
 }
-
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.slide,.dot,.arrow,.wa-button{transition:none}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important}}
 </style>
 </head>
 <body>
-<div class="top-note">Dulces artesanales · hechos con cariño</div>
-<header>
-  <nav class="nav" aria-label="Navegación principal">
-    <a class="brand" href="#inicio" aria-label="Dulceria, inicio">
-      <span class="brand-symbol" aria-hidden="true">✦</span>
-      <span><span class="brand-name">Dulceria</span><span class="brand-tag">Un detalle dulce</span></span>
+<header class="site-header">
+  <a class="brand" href="./" aria-label="Dulceria, inicio">
+    <span class="brand-mark" aria-hidden="true">✿</span>
+    <span>
+      <span class="brand-name">Dulceria</span>
+      <span class="brand-caption">chocotejas · trufas · alfajores</span>
+    </span>
+  </a>
+  <span class="header-dot" aria-hidden="true"></span>
+</header>
+
+<main>
+  <section class="catalog" id="catalogo" aria-label="Catálogo de productos">
+    <a class="photo-link" id="photo-link" href="https://wa.me/51941584584" target="_blank" rel="noopener noreferrer" aria-label="Consultar este producto por WhatsApp">
+      <img class="product-photo" id="product-photo" src="assets/chocotejas.svg" alt="Chocotejas artesanales" fetchpriority="high" decoding="async">
+      <span class="photo-chip" id="photo-chip">Hecho con cariño</span>
+      <span class="photo-index" id="photo-index">01 / 03</span>
     </a>
-    <div class="nav-right">
-      <span class="nav-label">¿Se te antojó algo?</span>
-      <a class="wa-button whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" data-message="Hola, quisiera consultar por los dulces de Dulceria.">
-        <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.8 11.8 0 0 0 12.12 0C5.6 0 .3 5.3.3 11.82c0 2.08.54 4.1 1.56 5.88L.2 24l6.47-1.7a11.83 11.83 0 0 0 5.45 1.31h.01c6.52 0 11.82-5.3 11.82-11.82a11.76 11.76 0 0 0-3.43-8.31ZM12.13 21.6a9.8 9.8 0 0 1-5-1.37l-.36-.21-3.84 1.01 1.02-3.74-.24-.38a9.78 9.78 0 0 1-1.5-5.09c0-5.45 4.44-9.89 9.9-9.89a9.82 9.82 0 0 1 7 2.9 9.82 9.82 0 0 1 2.9 7c0 5.46-4.44 9.9-9.89 9.9Zm5.43-7.41c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.09 4.49.71.31 1.27.5 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/></svg>
-        Hablar por WhatsApp
+    <div class="details">
+      <p class="eyebrow" id="product-eyebrow">Un clásico irresistible</p>
+      <h1 class="product-title" id="product-title">Chocotejas</h1>
+      <p class="product-description" id="product-description">Bocaditos de chocolate para compartir, regalar o disfrutar a tu manera.</p>
+      <a class="whatsapp-button" id="product-whatsapp" href="https://wa.me/51941584584?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20las%20chocotejas%20de%20Dulceria." target="_blank" rel="noopener noreferrer">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.8 11.8 0 0 0 12.12 0C5.6 0 .3 5.3.3 11.82c0 2.08.54 4.1 1.56 5.88L.2 24l6.47-1.7a11.83 11.83 0 0 0 5.45 1.31h.01c6.52 0 11.82-5.3 11.82-11.82a11.76 11.76 0 0 0-3.43-8.31ZM12.13 21.6a9.8 9.8 0 0 1-5-1.37l-.36-.21-3.84 1.01 1.02-3.74-.24-.38a9.78 9.78 0 0 1-1.5-5.09c0-5.45 4.44-9.89 9.9-9.89a9.82 9.82 0 0 1 7 2.9 9.82 9.82 0 0 1 2.9 7c0 5.46-4.44 9.9-9.89 9.9Zm5.43-7.41c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.09 4.49.71.31 1.27.5 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/></svg>
+        <span>Consultar por WhatsApp</span>
+        <span aria-hidden="true">↗</span>
       </a>
     </div>
-  </nav>
-</header>
-<main id="inicio">
-  <div class="carousel-shell">
-    <section class="carousel" id="product-carousel" aria-label="Carrusel de productos" aria-roledescription="carrusel">
-      <article class="slide is-active" data-title="Chocotejas" aria-roledescription="diapositiva" aria-label="1 de 3">
-        <div class="slide-copy">
-          <span class="kicker">Un clásico irresistible</span>
-          <h1>Un pequeño<br><em>gran antojo.</em></h1>
-          <p>Chocotejas para disfrutar despacio, compartir y convertir cualquier día en un momento especial.</p>
-          <a class="wa-button whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" data-message="Hola, quisiera información sobre las chocotejas de Dulceria.">Consultar chocotejas <span aria-hidden="true">↗</span></a>
+    <nav class="carousel-controls" aria-label="Cambiar producto">
+      <button class="control" id="previous" type="button" aria-label="Producto anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+      </button>
+      <div class="middle-controls">
+        <div class="dots" id="dots" aria-label="Elegir producto">
+          <button class="dot" type="button" data-index="0" aria-label="Ver chocotejas" aria-current="true"></button>
+          <button class="dot" type="button" data-index="1" aria-label="Ver trufas" aria-current="false"></button>
+          <button class="dot" type="button" data-index="2" aria-label="Ver alfajores" aria-current="false"></button>
         </div>
-        <div class="slide-art"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Chocoteja.jpg/960px-Chocoteja.jpg" alt="Fotografía de referencia de una chocoteja peruana" onerror="this.onerror=null;this.src='assets/chocotejas.svg'" fetchpriority="high"><span class="slide-index">01 / 03</span></div>
-      </article>
-      <article class="slide" data-title="Trufas" aria-roledescription="diapositiva" aria-label="2 de 3" aria-hidden="true">
-        <div class="slide-copy">
-          <span class="kicker">Intensas y delicadas</span>
-          <h2>Un momento<br><em>de chocolate.</em></h2>
-          <p>Trufas perfectas para darte un gusto, acompañar una visita o sorprender a alguien especial.</p>
-          <a class="wa-button whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" data-message="Hola, quisiera información sobre las trufas de Dulceria.">Consultar trufas <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="slide-art"><img src="https://upload.wikimedia.org/wikipedia/commons/4/48/ChocolateTruffles.jpg" alt="Fotografía de referencia de trufas de chocolate" loading="lazy" onerror="this.onerror=null;this.src='assets/trufas.svg'" loading="lazy"><span class="slide-index">02 / 03</span></div>
-      </article>
-      <article class="slide" data-title="Alfajores" aria-roledescription="diapositiva" aria-label="3 de 3" aria-hidden="true">
-        <div class="slide-copy">
-          <span class="kicker">Dulzura en cada bocado</span>
-          <h2>Suaves, dulces<br><em>y especiales.</em></h2>
-          <p>Alfajores para acompañar tu café, compartir en familia o regalar sin necesidad de una ocasión.</p>
-          <a class="wa-button whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" data-message="Hola, quisiera información sobre los alfajores de Dulceria.">Consultar alfajores <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="slide-art"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Alfajores-de-maicena-biscuits-recipe.jpg" alt="Fotografía de referencia de alfajores rellenos de dulce de leche" loading="lazy" onerror="this.onerror=null;this.src='assets/alfajores.svg'" loading="lazy"><span class="slide-index">03 / 03</span></div>
-      </article>
-      <div class="carousel-tools" aria-label="Elegir diapositiva">
-        <div class="dots">
-          <button class="dot" type="button" aria-label="Mostrar chocotejas" aria-current="true" data-slide="0"></button>
-          <button class="dot" type="button" aria-label="Mostrar trufas" aria-current="false" data-slide="1"></button>
-          <button class="dot" type="button" aria-label="Mostrar alfajores" aria-current="false" data-slide="2"></button>
-        </div>
-        <span class="counter" id="slide-counter" aria-live="polite">01 — 03</span>
+        <span class="counter" id="counter" aria-live="polite">01 / 03</span>
       </div>
-      <div class="arrows">
-        <button class="arrow" type="button" id="prev-slide" aria-label="Producto anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
-        <button class="arrow" type="button" id="next-slide" aria-label="Producto siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
-      </div>
-    </section>
-    <div class="below">
-      <div class="below-caption"><span class="tiny-stars" aria-hidden="true">✳ ✳ ✳</span><span>Chocotejas · Trufas · Alfajores</span></div>
-      <div class="below-note">Desliza, descubre tu favorito y consúltanos directamente.</div>
-    </div>
-  </div>
+      <button class="control" id="next" type="button" aria-label="Producto siguiente">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+      </button>
+    </nav>
+    <p class="swipe-hint">Desliza para descubrir más dulces</p>
+  </section>
 </main>
-<footer>Dulceria · Un detalle dulce, hecho con cariño<br><span style="display:inline-block;margin-top:7px">Fotografías temporales de referencia: <a href="https://github.com/chocotejas/Dulces/blob/main/CREDITOS-IMAGENES.md" style="color:var(--cocoa-light)" target="_blank" rel="noopener noreferrer">ver créditos</a></span></footer>
-<a class="floating-wa whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp" data-message="Hola, quisiera consultar por los dulces de Dulceria.">
-<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.8 11.8 0 0 0 12.12 0C5.6 0 .3 5.3.3 11.82c0 2.08.54 4.1 1.56 5.88L.2 24l6.47-1.7a11.83 11.83 0 0 0 5.45 1.31h.01c6.52 0 11.82-5.3 11.82-11.82a11.76 11.76 0 0 0-3.43-8.31ZM12.13 21.6a9.8 9.8 0 0 1-5-1.37l-.36-.21-3.84 1.01 1.02-3.74-.24-.38a9.78 9.78 0 0 1-1.5-5.09c0-5.45 4.44-9.89 9.9-9.89a9.82 9.82 0 0 1 7 2.9 9.82 9.82 0 0 1 2.9 7c0 5.46-4.44 9.9-9.89 9.9Zm5.43-7.41c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.09 4.49.71.31 1.27.5 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/></svg>
-</a>
+
+<footer class="site-footer">Dulceria · un detalle dulce, hecho con cariño · <a class="credit-link" href="CREDITOS-IMAGENES.md">créditos de fotos</a></footer>
+
 <script>
 (function(){
-  const number = "51941584584";
-  document.querySelectorAll(".whatsapp-link").forEach(function(link){
-    const message = link.getAttribute("data-message") || "Hola, quisiera información sobre los dulces de Dulceria.";
-    link.href = "https://wa.me/" + number + "?text=" + encodeURIComponent(message);
-  });
-  const slides = Array.from(document.querySelectorAll(".slide"));
-  const dots = Array.from(document.querySelectorAll(".dot"));
-  const counter = document.getElementById("slide-counter");
-  const carousel = document.getElementById("product-carousel");
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  let active = 0;
-  let timer = null;
-  let touchStartX = null;
-  function showSlide(index){
-    active = (index + slides.length) % slides.length;
-    slides.forEach(function(slide,i){
-      const chosen = i === active;
-      slide.classList.toggle("is-active", chosen);
-      slide.setAttribute("aria-hidden", String(!chosen));
+  "use strict";
+  const WHATSAPP_NUMBER = "51941584584";
+  const fallbackProducts = [{
+    id:"chocotejas",
+    nombre:"Chocotejas",
+    etiqueta:"Un clásico irresistible",
+    descripcion:"Bocaditos de chocolate para compartir, regalar o disfrutar a tu manera.",
+    imagen:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Chocoteja.jpg/960px-Chocoteja.jpg",
+    respaldo:"assets/chocotejas.svg",
+    alt:"Chocotejas artesanales, foto de referencia",
+    mensaje:"Hola, quisiera información sobre las chocotejas de Dulceria."
+  }];
+  let products = fallbackProducts;
+  let activeIndex = 0;
+  const photo = document.getElementById("product-photo");
+  const photoLink = document.getElementById("photo-link");
+  const title = document.getElementById("product-title");
+  const eyebrow = document.getElementById("product-eyebrow");
+  const description = document.getElementById("product-description");
+  const orderLink = document.getElementById("product-whatsapp");
+  const photoIndex = document.getElementById("photo-index");
+  const counter = document.getElementById("counter");
+  const dotsWrap = document.getElementById("dots");
+  const chip = document.getElementById("photo-chip");
+  const stage = document.getElementById("catalogo");
+  let touchX = null;
+  let touchY = null;
+  const svgFallbacks = {
+    chocotejas:"assets/chocotejas.svg",
+    trufas:"assets/trufas.svg",
+    alfajores:"assets/alfajores.svg"
+  };
+  function whatsappUrl(message){
+    return "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message || "Hola, quisiera información sobre los dulces de Dulceria.");
+  }
+  function makeDots(){
+    dotsWrap.replaceChildren();
+    products.forEach(function(product,index){
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "dot";
+      dot.dataset.index = String(index);
+      dot.setAttribute("aria-label","Ver " + product.nombre.toLowerCase());
+      dot.setAttribute("aria-current",String(index===activeIndex));
+      dot.addEventListener("click",function(){showProduct(index);});
+      dotsWrap.appendChild(dot);
     });
-    dots.forEach(function(dot,i){ dot.setAttribute("aria-current", String(i === active)); });
-    counter.textContent = String(active + 1).padStart(2,"0") + " — " + String(slides.length).padStart(2,"0");
   }
-  function stopTimer(){ if(timer){ window.clearInterval(timer); timer = null; } }
-  function startTimer(){
-    stopTimer();
-    if(!reduceMotion && !document.hidden) timer = window.setInterval(function(){showSlide(active+1);},6500);
+  function updateDots(){
+    Array.from(dotsWrap.children).forEach(function(dot,index){
+      dot.setAttribute("aria-current",String(index===activeIndex));
+    });
   }
-  document.getElementById("prev-slide").addEventListener("click",function(){showSlide(active-1);startTimer();});
-  document.getElementById("next-slide").addEventListener("click",function(){showSlide(active+1);startTimer();});
-  dots.forEach(function(dot){dot.addEventListener("click",function(){showSlide(Number(dot.dataset.slide));startTimer();});});
-  carousel.addEventListener("mouseenter",stopTimer);
-  carousel.addEventListener("mouseleave",startTimer);
-  carousel.addEventListener("focusin",stopTimer);
-  carousel.addEventListener("focusout",startTimer);
-  document.addEventListener("visibilitychange",function(){document.hidden?stopTimer():startTimer();});
-  carousel.addEventListener("keydown",function(event){
-    if(event.key==="ArrowLeft"){showSlide(active-1);startTimer();}
-    if(event.key==="ArrowRight"){showSlide(active+1);startTimer();}
+  function showProduct(index){
+    if(!products.length)return;
+    activeIndex = (index + products.length) % products.length;
+    const product = products[activeIndex];
+    const message = product.mensaje || ("Hola, quisiera información sobre " + product.nombre.toLowerCase() + " de Dulceria.");
+    title.textContent = product.nombre || "Producto";
+    eyebrow.textContent = product.etiqueta || "Hecho con cariño";
+    description.textContent = product.descripcion || "Consulta disponibilidad y detalles por WhatsApp.";
+    photo.alt = product.alt || product.nombre || "Producto de Dulceria";
+    photo.classList.add("is-changing");
+    photo.onerror = function(){
+      photo.onerror = null;
+      photo.src = product.respaldo || svgFallbacks[product.id] || "assets/chocotejas.svg";
+      photo.classList.remove("is-changing");
+    };
+    photo.onload = function(){photo.classList.remove("is-changing");};
+    photo.loading = activeIndex === 0 ? "eager" : "lazy";
+    photo.src = product.imagen || product.respaldo || svgFallbacks[product.id] || "assets/chocotejas.svg";
+    const contact = whatsappUrl(message);
+    photoLink.href = contact;
+    photoLink.setAttribute("aria-label","Consultar " + (product.nombre || "este producto") + " por WhatsApp");
+    orderLink.href = contact;
+    photoIndex.textContent = String(activeIndex+1).padStart(2,"0") + " / " + String(products.length).padStart(2,"0");
+    counter.textContent = String(activeIndex+1).padStart(2,"0") + " / " + String(products.length).padStart(2,"0");
+    chip.textContent = product.etiqueta || "Hecho con cariño";
+    updateDots();
+  }
+  document.getElementById("previous").addEventListener("click",function(){showProduct(activeIndex-1);});
+  document.getElementById("next").addEventListener("click",function(){showProduct(activeIndex+1);});
+  stage.addEventListener("keydown",function(event){
+    if(event.key==="ArrowLeft"){event.preventDefault();showProduct(activeIndex-1);}
+    if(event.key==="ArrowRight"){event.preventDefault();showProduct(activeIndex+1);}
   });
-  carousel.addEventListener("touchstart",function(event){touchStartX=event.changedTouches[0].screenX;},{passive:true});
-  carousel.addEventListener("touchend",function(event){
-    if(touchStartX===null)return;
-    const distance=event.changedTouches[0].screenX-touchStartX;
-    if(Math.abs(distance)>45){showSlide(active+(distance<0?1:-1));startTimer();}
-    touchStartX=null;
+  stage.addEventListener("touchstart",function(event){
+    const touch=event.changedTouches[0];touchX=touch.screenX;touchY=touch.screenY;
   },{passive:true});
-  showSlide(0);
-  startTimer();
+  stage.addEventListener("touchend",function(event){
+    if(touchX===null||touchY===null)return;
+    const touch=event.changedTouches[0];
+    const dx=touch.screenX-touchX;const dy=touch.screenY-touchY;
+    if(Math.abs(dx)>45 && Math.abs(dx)>Math.abs(dy)*1.15)showProduct(activeIndex+(dx<0?1:-1));
+    touchX=null;touchY=null;
+  },{passive:true});
+  makeDots();
+  showProduct(0);
+  fetch("productos.json").then(function(response){
+    if(!response.ok)throw new Error("No se pudo cargar el catálogo");
+    return response.json();
+  }).then(function(data){
+    if(!Array.isArray(data)||data.length===0)return;
+    products = data.filter(function(item){return item && item.nombre && (item.imagen||item.respaldo);});
+    if(!products.length){products=fallbackProducts;return;}
+    activeIndex=0;
+    makeDots();
+    showProduct(0);
+  }).catch(function(){
+    /* La portada ya tiene un producto de respaldo; si el archivo de datos no carga, sigue funcionando. */
+  });
 })();
 </script>
 </body>
