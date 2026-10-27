@@ -1,4 +1,4 @@
-name: Publish Dulceria to GitHub Pages
+name: Publicar Dulces Artesanales en GitHub Pages
 
 on:
   push:
